@@ -1,0 +1,193 @@
+
+:root {
+  font-family: system-ui, Arial, sans-serif;
+  color: #ef8e17;
+  background: #f68c13;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: url('images/background/bright-orange-abstract-background-with-soft-gradients-creating-a-warm-and-inviting-atmosphere-photo.jpeg'); /* Corrected */
+  background-size: cover;      
+  background-repeat: no-repeat;
+  background-position: center; 
+  color: white;
+}
+
+
+header {
+  background: #0857d4;
+  padding: 15px 0;
+  position: sticky;       
+  top: 0;
+  z-index: 100;
+ transition: top 0.3s;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+
+section {
+  padding: 8px 15%;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.Welcome-to-My-Portfolio {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #a85f06;
+  border: #00bcd4 2px solid;
+  padding: 16px;
+  text-align: justify;
+}
+
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #00bcd4;
+  color: #9b0707;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.download-btn:hover {
+  background: #0097a7;
+}
+
+
+.about-content {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 6px;
+  border: #00bcd4 2px solid;
+  background-color: #a85f06;
+}
+
+.about-content img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-content p {
+  flex: 1;
+  text-align: justify;
+}
+
+
+.edu-item {
+  max-width: 800px;
+  margin: 20px auto;
+  border-color: rgb(232, 165, 8);
+  background-color: #a85f06;
+}
+
+.skills-list {
+  max-width: 800px;
+  margin: 20px auto;
+  border-color: aquamarine;
+  background-color: #a85f06;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
+
+.project-item {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #00bcd4;
+  color: #a85f06;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0097a7;
+}
+
+
+footer {
+  background-image: url('images/footer/kenya-map-on-the-world-map-vector.jpg');
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  text-align: center;
+  margin-bottom: 20px;
+ }
+
+.social-icons i {
+  font-size: 40px;
+  color: #a85f06;
+  margin: 10px;
+  transition: color ;
+}
+
+.social-icons i:hover {
+  color: #00bcd4;
+}
+.section-box {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #a85f06;
+  border: 2px solid #00bcd4;
+  padding: 16px;
+  text-align: justify;
+  box-sizing: border-box;
+}
