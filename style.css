@@ -1,4 +1,4 @@
-:root {
+:root { 
   --primary: #0857d4;
   --secondary: #05aa47;
   --accent: #00bcd4;
@@ -46,6 +46,7 @@ nav a {
 nav a:hover {
   color: var(--accent);
 }
+
 #support {
   max-width: 800px;
   margin: 40px auto;
@@ -74,7 +75,7 @@ nav a:hover {
   align-items: center;
   gap: 10px;
   padding: 10px 15px;
-  background-color: #0857d4;
+  background-color: var(--primary);
   color: white;
   border-radius: 6px;
   text-decoration: none;
@@ -87,12 +88,12 @@ nav a:hover {
 }
 
 #support .link-btn:hover {
-  background-color: #05aa47;
+  background-color: var(--secondary);
   transform: scale(1.1);
 }
 
 .hero {
-  background: url('images/background/hero-bg.png') no-repeat center center/cover;
+  background: var(--bg);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -154,7 +155,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-
 .section-box,
 .edu-item,
 .skills-list,
@@ -168,7 +168,6 @@ h2 {
   border-radius: 8px;
 }
 
-
 .about-content {
   max-width: 800px;
   margin: 20px auto;
@@ -176,8 +175,7 @@ h2 {
   flex-direction: row-reverse;
   align-items: flex-start;
   gap: 15px;
-  background-color: rgba(168, 95, 6, 0.9);
-  border: 2px solid var(--accent);
+background-color:  rgba(168, 95, 6, 0.9);  border: 2px solid var(--accent);
   border-radius: 8px;
   padding: 16px;
 }
@@ -193,7 +191,6 @@ h2 {
   flex: 1;
 }
 
-
 .skills-list {
   list-style: none;
   padding: 0;
@@ -203,7 +200,6 @@ h2 {
 .skills-list li {
   margin-bottom: 8px;
 }
-
 
 .download-btn {
   display: inline-block;
@@ -220,7 +216,6 @@ h2 {
 .download-btn:hover {
   background: #0097a7;
 }
-
 
 .contact-form {
   max-width: 500px;
@@ -251,7 +246,6 @@ h2 {
   background: #0097a7;
 }
 
-
 footer {
   background: url('images/footer/world-map.png') center/cover no-repeat;
   text-align: center;
@@ -275,7 +269,6 @@ footer {
   color: var(--accent);
 }
 
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -294,7 +287,6 @@ section:nth-of-type(4) { animation-delay: 0.8s; }
 section:nth-of-type(5) { animation-delay: 1s; }
 section:nth-of-type(6) { animation-delay: 1.2s; }
 section:nth-of-type(7) { animation-delay: 1.4s; }
-
 
 @media (max-width: 768px) {
   nav {
@@ -319,6 +311,7 @@ section:nth-of-type(7) { animation-delay: 1.4s; }
     columns: 1;
   }
 }
+
 .support {
   padding: 60px 20px;
   text-align: center;
@@ -362,5 +355,5 @@ section:nth-of-type(7) { animation-delay: 1.4s; }
 
 .support-icon:hover {
   transform: scale(1.1);
-  color: #0857d4;
+  color: var(--primary);
 }
