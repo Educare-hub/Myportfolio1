@@ -21,7 +21,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header & Nav */
 header {
   background: var(--primary);
   padding: 15px 0;
@@ -47,8 +46,51 @@ nav a {
 nav a:hover {
   color: var(--accent);
 }
+#support {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #a85f06;
+  border: 2px solid #00bcd4;
+  border-radius: 10px;
+}
 
-/* Hero Section */
+#support h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#support .links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#support .link-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: #0857d4;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#support .link-btn i {
+  font-size: 1.5rem;
+}
+
+#support .link-btn:hover {
+  background-color: #05aa47;
+  transform: scale(1.1);
+}
+
 .hero {
   background: url('images/background/hero-bg.png') no-repeat center center/cover;
   height: 100vh;
@@ -99,9 +141,9 @@ nav a:hover {
   background: var(--secondary);
 }
 
-/* Section Base */
 section {
-  padding: 50px 15%;
+  padding: 0;
+  margin: 0;
   opacity: 0;
   transform: translateY(40px);
   animation: fadeInUp 0.8s ease forwards;
@@ -112,7 +154,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Section Boxes */
+
 .section-box,
 .edu-item,
 .skills-list,
@@ -126,7 +168,7 @@ h2 {
   border-radius: 8px;
 }
 
-/* About */
+
 .about-content {
   max-width: 800px;
   margin: 20px auto;
@@ -151,7 +193,7 @@ h2 {
   flex: 1;
 }
 
-/* Skills */
+
 .skills-list {
   list-style: none;
   padding: 0;
@@ -162,7 +204,7 @@ h2 {
   margin-bottom: 8px;
 }
 
-/* Resume Button */
+
 .download-btn {
   display: inline-block;
   margin-top: 10px;
@@ -179,7 +221,7 @@ h2 {
   background: #0097a7;
 }
 
-/* Contact */
+
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
@@ -209,7 +251,7 @@ h2 {
   background: #0097a7;
 }
 
-/* Footer */
+
 footer {
   background: url('images/footer/world-map.png') center/cover no-repeat;
   text-align: center;
@@ -233,7 +275,7 @@ footer {
   color: var(--accent);
 }
 
-/* Animations */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -253,7 +295,7 @@ section:nth-of-type(5) { animation-delay: 1s; }
 section:nth-of-type(6) { animation-delay: 1.2s; }
 section:nth-of-type(7) { animation-delay: 1.4s; }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   nav {
     flex-wrap: wrap;
@@ -276,4 +318,49 @@ section:nth-of-type(7) { animation-delay: 1.4s; }
   .skills-list {
     columns: 1;
   }
+}
+.support {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.support h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.support p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.support-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.support-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.support-icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.support-icon:hover {
+  transform: scale(1.1);
+  color: #0857d4;
 }
