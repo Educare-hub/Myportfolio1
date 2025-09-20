@@ -247,7 +247,7 @@ background-color:  rgba(168, 95, 6, 0.9);  border: 2px solid var(--accent);
 }
 
 footer {
-  background: url('images/footer/world-map.png') center/cover no-repeat;
+  background: url('images/background/starsoverthefield-scaled.jpg') center/cover no-repeat;
   text-align: center;
   padding: 20px;
   color: var(--text);
