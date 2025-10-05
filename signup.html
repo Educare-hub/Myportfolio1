@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up / Login | 88 Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; background:#f5f7fa; display:flex; justify-content:center; align-items:center; height:100vh; margin:0;}
+    .auth-container { width:100%; max-width:400px; background:#fff; padding:30px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1); text-align:center;}
+    .auth-container h1 { color:#0a84ff; margin-bottom:20px;}
+    .auth-container input { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ddd; border-radius:6px; font-size:14px;}
+    .auth-container button { width:100%; padding:12px; background:#0a84ff; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:16px; transition:background 0.3s;}
+    .auth-container button:hover { background:#0066cc; }
+    .switch-text { font-size:14px; margin-top:15px;}
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <h1 id="form-title">Create Account</h1>
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button id="authBtn">Sign Up</button>
+    <p class="switch-text" id="switchText">Already have an account? <a href="#" id="switchLink">Login here</a></p>
+  </div>
+  <script src="auth-system.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="jobForm">
+    <h2>Job Application</h2>
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="title" placeholder="Job Title" required>
+    <textarea name="message" rows="5" placeholder="Cover Letter / Message" required></textarea>
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="module">
+    import emailjs from '@emailjs/browser';
+    const form = document.getElementById('jobForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      emailjs.sendForm('service_suthvkl', 'template_8683a9k', this, 'KVCCyzjAsCjWmZoRH')
+        .then(() => {
+          alert('✅ Your job application has been submitted successfully!');
+        }, (error) => {
+          alert('❌ Submission failed. Please try again.');
+          console.error('Error:', error);
+        });
+    });
+  </script>
+
+</body>
+</html>

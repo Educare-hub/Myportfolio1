@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR System | John Gikundi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("YOUR_PUBLIC_KEY"); /* Replace with your EmailJS Public Key */
+    })();
+  </script>
+</head>
+<body>
+
+<header id="main-header">
+  <nav>
+    <a href="index.html">← Back to Portfolio</a>
+    <a href="#cv">CV Builder</a>
+    <a href="#apply">Job Application</a>
+  </nav>
+</header>
+
+<section id="cv" class="section" style="padding: 60px 10%; background: rgba(255,255,255,0.95); border-radius: 12px; margin: 40px auto; max-width: 900px;">
+  <h2 class="section-title">Build Your Professional CV</h2>
+  <p style="text-align:center;">Create, preview, and download your CV instantly.</p>
+
+  <form id="cvForm" class="cv-form">
+    <div class="form-row"><label>Full Name</label><input type="text" id="fullName" required></div>
+    <div class="form-row"><label>Email</label><input type="email" id="email" required></div>
+    <div class="form-row"><label>Education</label><textarea id="education"></textarea></div>
+    <div class="form-row"><label>Experience</label><textarea id="experience"></textarea></div>
+    <div class="form-row"><label>Skills</label><input type="text" id="skills"></div>
+    <div class="form-row"><label>Professional Summary</label><textarea id="summary"></textarea></div>
+
+    <div style="text-align:center; margin-top:20px;">
+      <button type="button" id="generateCVBtn" class="btn">Generate CV</button>
+      <button type="button" id="downloadCVBtn" class="btn">Download PDF</button>
+    </div>
+  </form>
+
+  <div id="cvPreview" class="cv-preview hidden" style="margin-top:30px;">
+    <h3>CV Preview</h3>
+    <div id="cvOutput"></div>
+  </div>
+</section>
+
+<section id="apply" class="section" style="padding: 60px 10%; background: rgba(255,255,255,0.95); border-radius: 12px; margin: 40px auto; max-width: 900px;">
+  <h2 class="section-title">Apply for a Job</h2>
+  <p style="text-align:center;">Send your generated CV via email automatically.</p>
+
+  <form id="jobForm" class="cv-form">
+    <div class="form-row"><label>Recipient Email</label><input type="email" id="recipientEmail" placeholder="Enter recruiter’s email" required></div>
+    <div class="form-row"><label>Subject</label><input type="text" id="jobSubject" placeholder="e.g., Application for QA Engineer" required></div>
+    <div class="form-row"><label>Message</label><textarea id="jobMessage" placeholder="Write your cover message here..." required></textarea></div>
+
+    <div style="text-align:center; margin-top:20px;">
+      <button type="button" id="sendEmailBtn" class="btn">Send Email with CV</button>
+    </div>
+  </form>
+</section>
+
+<footer style="text-align:center; margin-top:50px;">
+  <p>&copy; 2025 John Gikundi | HR System</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
